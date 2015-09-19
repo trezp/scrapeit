@@ -1,0 +1,20 @@
+{
+  "name": "scrapeitjs",
+  "version": "1.0.0",
+  "description": "Very simple data scraping tool using node ",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify main.js -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trezp/scrapeit.git"
+  },
+  "author": "trezp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trezp/scrapeit/issues"
+  },
+  "homepage": "https://github.com/trezp/scrapeit"
+}

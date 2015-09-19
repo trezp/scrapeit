@@ -1,7 +1,8 @@
 
 
-var scrapeIt = function(keyWord, url, selector){
-	var request = require("request"), 
+var scrapeIt = function(url, selector){
+	var request = require("request"); 
+	var keyWord = $("#keyword").val();
 	cheerio = require("cheerio");
 
 	request(url, function(error, response, body){
@@ -34,12 +35,13 @@ var scrapeIt = function(keyWord, url, selector){
 });
 }
 
-scrapeIt("software", "http://portland.craigslist.org/search/sof", '.row .pl a');
 
+module.exports  = scrapeIt;
 
 //next steps 
 	//does not return search terms at the beginning of the string. Appears to be ignoring the first word
-	//Built UI 
+	//Build UI
+	//manage dependancies with a package.JSON
 	//Access information inside job add
 
 
