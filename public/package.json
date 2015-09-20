@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/trezp/scrapeit/issues"
   },
-  "homepage": "https://github.com/trezp/scrapeit"
+  "homepage": "https://github.com/trezp/scrapeit",
+  "dependencies": {
+    "node-static": "^0.7.7"
+  }
 }

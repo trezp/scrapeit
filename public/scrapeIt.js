@@ -1,8 +1,7 @@
 
 
-var scrapeIt = function(url, selector){
+var scrapeIt = function(url, selector, keyWord){
 	var request = require("request"); 
-	var keyWord = $("#keyword").val();
 	cheerio = require("cheerio");
 
 	request(url, function(error, response, body){
@@ -11,7 +10,7 @@ var scrapeIt = function(url, selector){
 		var $ = cheerio.load(body),
 			links = $(selector);
 			jobTitleArray = [];
-
+			console.log('test');
 			//searches each selector for keyword
 			links.each(function(i, link){
 				jobTitle = $(link).html();
@@ -34,7 +33,6 @@ var scrapeIt = function(url, selector){
 	}
 });
 }
-
 
 module.exports  = scrapeIt;
 
